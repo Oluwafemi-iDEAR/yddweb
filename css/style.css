@@ -1,4 +1,4 @@
-header {
+/*header {
   position: relative;
   background-color: black;
   height: 100vh;
@@ -36,7 +36,7 @@ header .overlays {
   background-color: black;
   opacity: 0.7;
   z-index: 1;
-}
+}*/
 
  .container {
     position: relative;
