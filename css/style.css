@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Londrina+Shadow);
+@import url(https://fonts.googleapis.com/css?family=Enriqueta);
 /*header {
   position: relative;
   background-color: black;
@@ -48,7 +50,7 @@ header .overlays {
     padding: 0;
     margin: 0;
     overflow: auto;
-    background-color: #292924
+    background-color: #292924 /*#3bafda*/;
 }
 
 /*--------------------------------------*/
@@ -67,7 +69,7 @@ header .overlays {
 
 /*--------------------------------------*/
 .platforms-grid li:nth-child(2n) a {
-    background-color: #292929
+    background-color: #75d4f2/* #066282*//*#292929*/
 }
 
 .platforms-grid li:nth-child(2n) svg {
@@ -76,7 +78,7 @@ header .overlays {
 }
 
 .platforms-grid li:nth-child(2n) svg path {
-    fill: #363636
+    fill: /*#363636*//*#a42e36*//*#0184b0*/#43458f
 }
 
 .platforms-grid li a {
@@ -90,7 +92,9 @@ header .overlays {
     color: rgba(255, 255, 255, .4);
     text-decoration: none;
     text-transform: uppercase;
-    background-color: #363636;
+    /*background-color: #363636;*/
+/*    background-color: #0184b0;*/
+    background-color: #43458f;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -ms-transition: all .3s;
@@ -108,8 +112,8 @@ header .overlays {
 }
 
 .platforms-grid li svg path {
-    fill: #292929
-}
+    fill: /*#292929/*#a42e36(red)*/
+  }
 
 @media only screen and (min-width:1000px) {
     .platforms-grid li {
@@ -135,7 +139,8 @@ header .overlays {
         z-index: 1;
         width: 0;
         height: 100%;
-        background-color: #574ea9, .60;
+        /*background-color: #574ea9, .60;*//*
+        background-color: rgba(154, 46, 54, .75);*/
         content: "";
         -webkit-transition: width .3s;
         -moz-transition: width .3s;
@@ -155,7 +160,7 @@ header .overlays {
         height: 200px
     }
     .platforms-grid li svg path {
-        fill: #292929
+        fill: #75d4f2/*#066282*//*#292929*/
     }
     .platforms-grid li:nth-child(2n) svg {
         top: -100px
@@ -181,7 +186,7 @@ header .overlays {
   letter-spacing:5px;
   text-transform:uppercase;
   margin:0;
-  padding-left: 20px;
+  padding-left: 1px;
 }
 
 .title-area span{
@@ -275,9 +280,68 @@ cursor: -moz-grab;
   float:none;
 }
 /*------------------------------------------------------------------------------------------------------------------------------*/
+
+hr.sep-2 {
+  border: 0; 
+  height: 1px; 
+  background-image: linear-gradient(to right, #f0f0f0, #00b9ff, #59d941, #f0f0f0);
+}
+hr.sep-3 {
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, #f0f0f0, #8f8f8f, #f0f0f0);
+}
+hr.sep-3::after {
+  content: '§';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  transform-origin: 50% 50%;
+  padding: 1rem;
+  background-color: white;
+}
+
+
+
+h2.teenz {
+  font-family:'Londrina Shadow', arial, sans-serif;
+  font-size:56px;
+  color:#77cc33;
+}
+
+p {
+  font-family:'Enriqueta', georgia, serif;
+  font-size:1em;
+  line-height:1.5em;
+  color:#444444;
+}
+
+hr.teenz {
+  position:relative;
+  background-color:none;
+  border:none;
+  height:1px;
+  width:100%;
+  margin: 45px auto;
+  text-align:center;
+}
+hr.teenz:after {
+  position: relative;
+  top: -0.8em;
+  font-size:5.0em;
+  background: none;
+  display: inline-block;
+  color:#77cc33;
+  font-family: "Londrina Shadow";
+  line-height: 1;
+  content: ". . . . . . .";
+}
+
+
 /*----------------------------------------------------Gallery Column Starts--------------------------------------------------------*/
 
-#section2{
+/*#section2{
   display:block;
   margin-top:15px;
   float:left;
@@ -300,5 +364,5 @@ cursor: -moz-grab;
 .gallery img:hover{
   filter: grayscale(0);
   transform: scale(1.1);
-}
+}*/
 /*----------------------------------------------------Gallery Column Ends--------------------------------------------------------*/
