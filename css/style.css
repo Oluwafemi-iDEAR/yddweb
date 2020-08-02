@@ -69,7 +69,7 @@ header .overlays {
 
 /*--------------------------------------*/
 .platforms-grid li:nth-child(2n) a {
-    background-color: #75d4f2/* #066282*//*#292929*/
+    background-color: #2f305e /*#75d4f2*//* #066282*//*#292929*/
 }
 
 .platforms-grid li:nth-child(2n) svg {
@@ -78,7 +78,7 @@ header .overlays {
 }
 
 .platforms-grid li:nth-child(2n) svg path {
-    fill: /*#363636*//*#a42e36*//*#0184b0*/#43458f
+    fill: /*#363636*//*#a42e36*/#0184b0/*#43458f*/
 }
 
 .platforms-grid li a {
@@ -93,8 +93,8 @@ header .overlays {
     text-decoration: none;
     text-transform: uppercase;
     /*background-color: #363636;*/
-/*    background-color: #0184b0;*/
-    background-color: #43458f;
+    background-color: #0184b0;
+   /* background-color: #43458f;*/
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -ms-transition: all .3s;
@@ -160,7 +160,7 @@ header .overlays {
         height: 200px
     }
     .platforms-grid li svg path {
-        fill: #75d4f2/*#066282*//*#292929*/
+        fill: #2f305e/*#75d4f2*//*#066282*//*#292929*/
     }
     .platforms-grid li:nth-child(2n) svg {
         top: -100px
@@ -279,64 +279,7 @@ cursor: -moz-grab;
   display:block;
   float:none;
 }
-/*------------------------------------------------------------------------------------------------------------------------------*/
 
-hr.sep-2 {
-  border: 0; 
-  height: 1px; 
-  background-image: linear-gradient(to right, #f0f0f0, #00b9ff, #59d941, #f0f0f0);
-}
-hr.sep-3 {
-  border: none;
-  height: 1px;
-  background-image: linear-gradient(to right, #f0f0f0, #8f8f8f, #f0f0f0);
-}
-hr.sep-3::after {
-  content: '§';
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(60deg);
-  transform-origin: 50% 50%;
-  padding: 1rem;
-  background-color: white;
-}
-
-
-
-h2.teenz {
-  font-family:'Londrina Shadow', arial, sans-serif;
-  font-size:56px;
-  color:#77cc33;
-}
-
-p {
-  font-family:'Enriqueta', georgia, serif;
-  font-size:1em;
-  line-height:1.5em;
-  color:#444444;
-}
-
-hr.teenz {
-  position:relative;
-  background-color:none;
-  border:none;
-  height:1px;
-  width:100%;
-  margin: 45px auto;
-  text-align:center;
-}
-hr.teenz:after {
-  position: relative;
-  top: -0.8em;
-  font-size:5.0em;
-  background: none;
-  display: inline-block;
-  color:#77cc33;
-  font-family: "Londrina Shadow";
-  line-height: 1;
-  content: ". . . . . . .";
-}
 
 
 /*----------------------------------------------------Gallery Column Starts--------------------------------------------------------*/

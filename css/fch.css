@@ -1,0 +1,277 @@
+/*---------------------Figure caption Hover---------------*/
+figure {
+    display:table;  /* to align width of figcaption to image width (hack?) */
+    position:relative;
+    overflow:hidden;
+    font-weight:normal;
+    margin:0 auto 1em;
+}
+figure img {
+    display:block;
+    margin:0 auto;
+}
+figcaption {
+    display:table-caption;  /* maybe required for captions below image */
+    caption-side:bottom;    /* ditto */
+    position:absolute;
+    background:rgba(67,69,143,.75);
+    color:#fff;
+    padding:1rem;
+    text-align:center;
+    font-size:.9rem;
+    opacity:0;
+    bottom:0;
+    height: 240px;
+    left:0;
+    -webkit-transform:translate3d(0,100%,0);
+            transform:translate3d(0,100%,0);
+    -webkit-transition:all 1.5s ease;
+    transition:all 0.5s ease;
+}
+figure:hover figcaption {
+    opacity:1;
+    -webkit-transform:translate3d(0,0,0);
+            transform:translate3d(0,0,0);
+} 
+.youth{
+    color: #fff;
+}
+.youth{
+    color: #fff;
+}
+/*--------------------------End---------------------------*/
+
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #3bafda;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+hr.sep-2 {
+  border: 0; 
+  height: 1px; 
+  background-image: linear-gradient(to right, #f0f0f0, #00b9ff, #59d941, #f0f0f0);
+}
+hr.sep-3 {
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, #f0f0f0, #8f8f8f, #f0f0f0);
+}
+hr.sep-3::after {
+  content: '§';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  transform-origin: 50% 50%;
+  padding: 1rem;
+  background-color: white;
+}
+
+
+
+h2.teenz {
+  font-family:'Londrina Shadow', arial, sans-serif;
+  font-size:56px;
+  color:#3bafda;
+}
+
+p {
+  font-family:'Enriqueta', georgia, serif;
+  font-size:1em;
+  line-height:1.5em;
+  color:#444444;
+}
+
+hr.teend {
+  position:relative;
+  background-color:none;
+  border:none;
+  height:1px;
+  width:100%;
+  margin: 45px auto;
+  text-align:center;
+}
+hr.teend:after {
+  position: relative;
+  top: -0.8em;
+  font-size:5.0em;
+  background: none;
+  display: inline-block;
+  color:#77cc33;
+  font-family: "Londrina Shadow";
+  line-height: 1;
+  content: ". . . . . . .";
+}
+
+
+/*----------------------Audio player----------------*/
+
+.example {
+    margin: 50px auto 0;
+    width: 400px;
+}
+.player {
+    background: transparent url("../images/spr.png") no-repeat scroll center top;
+    height: 162px;
+    position: relative;
+    width: 326px;
+    z-index: 2;
+}
+.title, .artist {
+    font-family: verdana;
+    left: 167px;
+    position: absolute;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.title {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    top: 23px;
+}
+.artist {
+    color: #EEEEEE;
+    font-size: 12px;
+    top: 40px;
+}
+.pl {
+    background: transparent url("../images/spr.png") no-repeat scroll -274px -175px;
+    cursor: pointer;
+    height: 34px;
+    left: 270px;
+    position: absolute;
+    top: 20px;
+    width: 32px;
+}
+.pl:hover {
+    top: 21px;
+}
+.cover {
+    background: transparent url(../data/cover1.jpg) no-repeat scroll center top;
+    border-radius: 5px 5px 5px 5px;
+    height: 94px;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    width: 94px;
+}
+.controls {
+    cursor: pointer;
+    height: 23px;
+    left: 167px;
+    position: absolute;
+    top: 65px;
+    width: 138px;
+}
+.controls .play, .controls .pause, .controls .rew, .controls .fwd {
+    background: transparent url("../images/spr.png") no-repeat scroll 0 0;
+    float: left;
+    height: 100%;
+    width: 33%;
+}
+.controls .play {
+    background-position: -8px -171px;
+}
+.controls .pause {
+    background-position: -8px -198px;
+    display: none;
+}
+.controls .rew {
+    background-position: -54px -171px;
+}
+.controls .fwd {
+    background-position: -100px -171px;
+}
+.controls .play:hover {
+    background-position: -8px -170px;
+}
+.controls .pause:hover {
+    background-position: -8px -197px;
+}
+.controls .rew:hover {
+    background-position: -54px -170px;
+}
+.controls .fwd:hover {
+    background-position: -100px -170px;
+}
+.hidden {
+    display: none;
+}
+.controls .visible {
+    display: block;
+}
+.volume {
+    height: 11px;
+    left: 186px;
+    position: absolute;
+    top: 96px;
+    width: 112px;
+}
+.tracker {
+    height: 15px;
+    left: 20px;
+    position: absolute;
+    top: 126px;
+    width: 285px;
+}
+.ui-slider-range {
+    background: transparent url("../images/spr.png") no-repeat scroll 5px -222px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ui-slider-handle {
+    cursor: pointer;
+    height: 10px;
+    margin-left: -5px;
+    position: absolute;
+    top: 2px;
+    width: 10px;
+    z-index: 2;
+}
+.volume .ui-slider-handle {
+    background: url("../images/spr.png") no-repeat scroll -201px -188px rgba(0, 0, 0, 0);
+    height: 13px;
+    width: 13px;
+}
+.playlist {
+    background-color: #333333;
+    border-radius: 5px 5px 5px 5px;
+    list-style-type: none;
+    margin: -10px 0 0 2px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    position: relative;
+    width: 326px;
+    z-index: 1;
+}
+.playlist li {
+    color: #EEEEEE;
+    cursor: pointer;
+    margin: 0 0 5px 15px;
+}
+.playlist li.active {
+    font-weight: bold;
+}
+
+/*--------------------Audio player ends-------------*/
