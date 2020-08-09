@@ -50,7 +50,7 @@ header .overlays {
     padding: 0;
     margin: 0;
     overflow: auto;
-    background-color: #292924 /*#3bafda*/;
+    background-color: #292924;
 }
 
 /*--------------------------------------*/
@@ -69,7 +69,7 @@ header .overlays {
 
 /*--------------------------------------*/
 .platforms-grid li:nth-child(2n) a {
-    background-color: #2f305e /*#75d4f2*//* #066282*//*#292929*/
+    background-color: #2f305e
 }
 
 .platforms-grid li:nth-child(2n) svg {
@@ -78,7 +78,7 @@ header .overlays {
 }
 
 .platforms-grid li:nth-child(2n) svg path {
-    fill: /*#363636*//*#a42e36*/#0184b0/*#43458f*/
+    fill: #0184b0
 }
 
 .platforms-grid li a {
@@ -92,9 +92,7 @@ header .overlays {
     color: rgba(255, 255, 255, .4);
     text-decoration: none;
     text-transform: uppercase;
-    /*background-color: #363636;*/
     background-color: #0184b0;
-   /* background-color: #43458f;*/
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -ms-transition: all .3s;
@@ -112,7 +110,7 @@ header .overlays {
 }
 
 .platforms-grid li svg path {
-    fill: /*#292929/*#a42e36(red)*/
+    fill: #2f305e
   }
 
 @media only screen and (min-width:1000px) {
