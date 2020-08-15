@@ -38,8 +38,8 @@ header .overlays {
   background-color: black;
   opacity: 0.7;
   z-index: 1;
-}*/
-
+}
+*/
  .container {
     position: relative;
     z-index: 1; }
@@ -255,7 +255,7 @@ header .overlays {
 }
 
 #page-events, #page-blog{
-  background:#3bafda;
+  background:#323465;
 }
 
 .custom-carousel-1,
@@ -307,3 +307,52 @@ cursor: -moz-grab;
   transform: scale(1.1);
 }*/
 /*----------------------------------------------------Gallery Column Ends--------------------------------------------------------*/
+
+/*----------------------------------------------------Change Background Pic on scroll--------------------------------------------------------*/
+/*
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {*/
+  /* Full height *//*
+  height: 50%;*/
+
+  /* Center and scale the image nicely *//*
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
+/* Images used *//*
+.img1 { background-image: url("wp-content/uploads/sites/13/2015/01/slide8.png"); }
+.img2 { background-image: url("wp-content/uploads/sites/13/2015/01/slide8.png"); }
+.img3 { background-image: url("wp-content/uploads/sites/13/2015/01/slide8.png"); }
+.img4 { background-image: url("wp-content/uploads/sites/13/2015/01/slide8.png"); }
+.img5 { background-image: url("wp-content/uploads/sites/13/2015/01/slide8.png"); }
+.img6 { background-image: url("wp-content/uploads/sites/13/2015/01/slide8.png"); }
+*/
+/* Position text in the middle of the page/image *//*
+.bg-text {
+  background-color: rgb(0,0,0);*/ /* Fallback color *//*
+  background-color: rgba(0,0,0, 0.4);*/ /* Black w/opacity/see-through *//*
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed;*/ /* Stay fixed *//*
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;*/
+}
+/*----------------------------------------------------Change Background Pic on scroll Ends--------------------------------------------------------*/

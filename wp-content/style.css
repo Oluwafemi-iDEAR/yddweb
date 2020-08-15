@@ -79,3 +79,13 @@
 	justify-content: center;
 	align-items: center;
 }
+.trailer video
+{
+	position: relative;
+	max-width: 900px;
+	outline: none;
+}
+@media (max-width: 991px)
+{
+	
+}
