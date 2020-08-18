@@ -228,6 +228,135 @@ margin: 0 auto;
 <link href="wp-content/themes/AdoreChurch-Child/style-switcher/css/style-switcher.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+<style>
+a:link {
+	color: rgba(50, 52, 101);
+}
+.button {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 16px 32px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px 0px rgba(60, 18, 42, 0.5);
+  transition: all .5s ease;
+  letter-spacing: 1px;
+  border-radius: 30px;
+}
+.buttonypf {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #323465; 
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+ }
+
+.buttonypf:hover {
+  background-color: #323465;
+  color: white;
+  border: 2px solid #fff;
+}
+#closeBtn{
+  background-color: white; 
+  color: black; 
+  border: 5px solid #323465;
+  border-radius: 30px; 
+  margin: 0;
+  position: absolute;
+  left: 25%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.register {
+  background-color: #323465; 
+  color: #fff; 
+  border: 2px solid #6a6ede; 
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+ }
+ .connect {
+  background-color: #FFF; 
+  color: black; 
+  border: 2px solid #6a6ede; 
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+ }
+
+.register:hover {
+  background-color: #fff;
+  color: #000;
+}
+.connect:hover {
+  background-color: #323465;
+  color: white;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,2.4); /* Black w/ opacity */
+}
+body.modal-content {
+    overflow: hidden;
+    position:fixed;
+    width: 100%;
+}
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 3px solid #6a6ede;
+  width: 80%;
+  z-index: 1;
+  font-family: Roboto; line-height: 1.8; font-style: normal; font-weight: 200; font-size: 18px;
+}
+
+/* The Close Button */
+.close{
+  color: #aaaaaa;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
 		     </head>
     <!--// CLOSE HEAD //-->
     <body class="sermon-template-default single single-sermon postid-107  header-style1 theme-AdoreChurch give-test-mode give-page woocommerce-no-js wpb-js-composer js-comp-ver-6.0.5 vc_responsive">
@@ -237,7 +366,7 @@ margin: 0 auto;
     	<div class="container for-navi">
         	<div class="site-logo">
             <h1>
-                <a href="https://demo.imithemes.com/adore-church-wp" title="Logo">
+                <a href="index.html" title="Logo">
                 <div class="text-logo"><span class="logo-icon"><i class="fa fa-heart"></i></span><span class="logo-text">AFMWECA<span>YDD</span></span></div>                </a>
             </h1>
             </div>
@@ -279,10 +408,18 @@ margin: 0 auto;
 <li  class="menu-item-487 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children "><a href="#">Blog<span class="nav-line"></span></a></li>
 </nav>            <a href="#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
     	</div>
-	</header><div class="page-header parallax clearfix" style="background-image:url(wp-content/uploads/sites/13/2015/01/baptism.jpg); background-color:; height:550px;">
+	</header><div class="page-header parallax clearfix" style="background-image:url(wp-content/uploads/sites/13/2015/01/afcfbanner.jpg); background-color:; height:550px;">
         <div class="title-subtitle-holder">
         	<div class="title-subtitle-holder-inner">
-                        		<h2>Apostolic Faith Campus Fellowship (AFCF)</h2>
+                        	<h2 style="font-family: Roboto; font-style: normal; font-weight: 200; line-height: 28px; color: #fff; letter-spacing: 1.5px; text-shadow:  5px 5px 5px rgb(14, 33, 33);"><strong>Apostolic Faith Campus Fellowship (AFCF)</strong></h2>
+                        		<div class="row">
+            	                      <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-3 featured-block featured-block-equal" style="margin-top: 50px;">
+                        				<a href="#"><button class="button connect" title="Get Connected">Contact Us</button></a>
+                   				  	  </div>
+                                      <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-3 featured-block featured-block-equal" style="margin-top: 50px;">
+                        				<a href="#"><button class="button register" title="Prospective students register here">Register</button></a>
+                    				  </div>
+				  				</div>
             		        </div>
         </div>    </div>    <!-- End Page Header -->    <!-- Breadcrumbs -->
     <div class="lgray-bg breadcrumb-cont">
@@ -300,7 +437,51 @@ margin: 0 auto;
     	<div id="content" class="content full">
         	<div class="container">
 
+        	<div class="container">
+            	<div class="row" style="margin-top: 50px">
+            	  <div class="curtail">
+                    <div class="col-md-4 col-sm-4 featured-block featured-block-equal">
+                        <a href="#"><button class="button buttonypf" title="History of AFCF">Our History</button></a>
+                    </div>
+				  </div>
+                    <div class="curtail">
+                    <div class="col-md-4 col-sm-4 featured-block featured-block-equal">
+                        <a href="#"><button class="button buttonypf" title="For scholarships and others">Opportunities</button></a>
+                    </div>
+				  </div> 
+                    <div class="curtail">
+                    <div class="col-md-4 col-sm-4 featured-block featured-block-equal">
+                        <a href="#"><button class="button buttonypf"  title=" AFCF Resources">Resources</button></a>
+                    </div>
+				  </div>
+                </div>
+        	</div>
+        	<br>
 
+                	<div id="content" class="content full">
+                        <div class="posts-listing">
+
+
+						<hr style="width:50%;margin-left:50; margin-right:50; height:4px; border:none; background-color:#323465;"> <br>
+
+                        <h2 style="text-align:center; padding-bottom: 20px;"><strong>About Us</strong></h2>
+                        <hr style="width:25%;margin-left:50; margin-right:50; height:4px; border:none; color:red; background-color:#323465;"> <br>
+                        <div class="post-excerpt" style="font-family: Roboto; line-height: 1.8; font-style: normal; font-weight: 200; font-size: 24px;">
+
+                         <p>
+                        	Apostolic Faith Campus Fellowship (AFCF) is the Campus wing of The Apostolic Faith Church, under the auspices of the Outreach Department of the Youth Development Directorate (YDD). She is a body made up of Christian students across various higher institutions in West and Central Africa (WeCA).</p>
+                        	<p>
+                        	AFCF was formerly known as Association of Visiting Secretaries (AVS), modified to Campus AVS. She shares the burning vision of the YDD &quot;to raise and retain an army of outstanding young people going to heaven and persuading others to come along”. Members of the AFCF see to the fulfilment of this vision on their various campuses and institutions of higher learning.
+                        	</p>
+                        	<p>Members are encouraged to seek God and in turn, bring others to Christ by the lives they live. Therefore, young soldiers can be raised and efforts geared towards nurturing them through the undiluted word of God and doctrinal practices as ordained by God through His Church.</p>
+
+                        	<p>The main aim of every member is to get to Heaven at last and not alone - but with as many students within our reach through various means of evangelism, because we have been empowered to be witnesses on our campuses.</p>
+                        	<p>
+                        		AFCF as a body organises programmes that cut across various spheres of a student&#39;s life; particularly the academic, physical, spiritual and social spheres. Her programmes are organised appealingly to every individual in the school community.
+                        	</p>
+		                </div>
+        			</div> 
+				</div>
  <section id="page-events" class="no-padding">
                 <div class="fullwidth">
                     <div class="one-fourth text-center">
@@ -318,8 +499,6 @@ margin: 0 auto;
                                         <h3>Our Vision</h3>
                                     </a>
                                     <span class="desc">To raise and retain an army of outstanding young people going to Heaven and persuading others to come along.
-
-                                    <a href="vission.html">Learn More</a>
                                     </span>
                                 </div>
                                 <img src="wp-content/uploads/sites/13/2015/01/img_community-600x400.jpg" alt="">
@@ -330,11 +509,12 @@ margin: 0 auto;
                                     <a href="#">
                                         <h3>Our Mission</h3>
                                     </a>
-                                    <span class="desc">To create platforms using
-									relevant channels through which young people can discover themselves, connect with God, the Church and one another as means of converting the world.
-
-                                    <a href="mission.html">Learn More</a>
-                                    </span>
+                                    <span class="desc">AFCF mission borders on the strong pillars through which it reaches out to students and they are...
+									
+									<!-- Trigger/Open The Modal -->
+									<button id="myBtn">Learn More</button>
+								</span>
+									
                                 </div>
                                 <img src="wp-content/uploads/sites/13/2015/01/img_mission-600x400.jpg" alt="">
                             </div>
@@ -351,174 +531,139 @@ margin: 0 auto;
                                 
                             </div>                         
 							<img src="wp-content/uploads/sites/13/2015/01/afcf.png" alt="">
-                        </div> 
+                        </div>
+                         <!-- The Modal -->
+							<div id="myModal" class="modal">
+
+							  <!-- Modal content -->
+							  <div class="modal-content"><!-- 
+							    <span class="close">&times;</span> -->
+							    <p>
+
+								
+								<li>
+									Structure: AFCF has a well-built structure whereby a very deliberate channel of help is available to every student that identifies with the body.
+								</li>
+								<li>
+									Platform: AFCF provides a sustainable platform for the building of young minds in the way of the Lord. This is done by providing a great team spirit and an atmosphere for togetherness between students and the church.
+								</li>
+								<li>
+									Programme: AFCF organizes weekly programmes for the total edification (spiritually and academically) of students in all campuses where the fellowship is present.<br>The AFCF also holds two nation-wide programs twice every year in all her campuses. This goes a long way to reach out to students on the campuses and God has always used such programmes mightily to break the power of hell and deliver students from their misery.
+								</li>
+								<li>
+									Care: The love among the brethren serve as a bedrock for the flourishing of this family of God. Everyone looks out for one another and helps when the need arises.
+								</li>
+									    
+								</p><span class="close"><button id="closeBtn">Go Back</button></span>
+							  </div>
+
+						</div>
                     </div>
                 </div> 
-                <div class="clearfix"></div>
-
             </section><br>
+            					<p style="font-family: Roboto; line-height: 1.8; font-style: normal; font-weight: 200; font-size: 24px;">AFCF is a means of nurturing and monitoring young members to remain in the faith even outside their locality. Forever, our light shines!<br>
+            						AFCF ...be <strong>a shining light</strong></p>
 
 
-                <div class="row">
-                	<div class="col-md-8" id="content-col">                    	
-                    	<a href="index.html" class="basic-link backward">Back to YDD Home</a>                    <!-- 	<div class="sermon-media clearfix"> -->
-                                                	
-
-                         <p>
-                        	This is a unit within the Outreach Department under the Youth Development Directorate.
-                        	<br>It caters to all teenage activities throughout the year in Apostolic Faith, and brings all teenagers together, creating an avenue for them to share their voices, ask questions and seek counselling. <br>During their gatherings, they handle different aspects of the service from singing to the playing of musical instruments which give them a sense of belonging in the church.</p>
-                        <p>	
-							Further details of this unit are shared below:
-                        </p>	
-                        <h3>
-                        	<u>WHO IS A TEENAGER?</u>
-                        </h3>
-                        <div class="post-media"><a href="index40c6.html?sermon=the-difference-maker"><img src="images/downsize.jpg" class="post-thumb wp-post-image" alt="" /></a></div>
-                        <br>
-						<p>A teenager, or teen, is a young person whose age falls within the range of 13–19. They are called teenagers because their age number ends with &quot;teen”… (Wikipedia)
-						</p>
-                           	Categories of those who fall into this Group – Teenage:
-                        <ol>
-                        	<li>
-                        		Those between ages 13-19.
-                        	</li>
-                        	<li>
-                        		All secondary school students irrespective of their age.
-                        	</li>
-                        	<li>
-                        		All youths seeking admission irrespective of their age
-                        	</li>
-                        </ol>
-                        	Note: This group excludes all higher institution students irrespective of the age.
-                        	<p>
-                        	<h3>
-                        		<u>OBJECTIVES</u>
-                        	</h3>
-                        	<ul>
-                        		<li>To bridge the gap for our teenagers between when they leave the Elementary Department and when they get admitted into higher institutions.
-								</li>
-								<li>
-									To make them know who they are in Christ from an early stage in their lives.
-								</li>
-								<li>
-									To promote all-round excellence among our teenagers.
-								</li>
-								<li>
-									To promote the heart and culture of the gospel among our teenagers.
-								</li>
-								<li>
-									To prepare a ready-made army to lunch into the campus world and “Let the light shine’’.
-								</li>
-                        	</ul>
-                        </p>
-
-                        		<h3>
-                        		<u>PROGRAMS</u>
-                        		</h3>
-                        		<h4>
-                        			Branch/Zonal Level
-                        		</h4>
-                        		<ul>
-                        		<li>Specific programs targeted at Teenagers, at least once in a quarter at Branch level.
-								</li>
-								<li>
-									September Back to School.
-								</li>
-								<li>
-									Pre-Varsity/Parent Orientation – Yearly session with SS2/SS3 students with their parents.
-								</li>
-								<li>
-									Sight-seeing and outings such as picnics –Big Picture.
-								</li>
-                        	</ul>
-                        	<br>
-                        	<h4>
-                        			District/Zonal Level
-                        		</h4>
-                        		<ul>
-                        		<li>May 27 Teenagers Programme – Youth Weekend (during this programme, district
-representatives for “Who wants to be a Bible Giant” are selected based on their performance).
-								</li>
-								<li>
-									Admission fair- Big Picture.
-								</li>
-								<li>
-									Teens Camp – Big Picture.
-								</li>
-								</ul>
-								<br>
-                        	<h4>
-                        			District/Zonal Level
-                        		</h4>
-                        		<ul>
-                        		<li>August Camp Meeting Teenagers Programs.
-								</li>
-								<li>
-									Teen Camps – Big Picture.
-								</li>
-								</ul>
-<!-- 
-                                                     	</div> -->
-                       	</div>
-                    <!-- </div> -->
-                                        <!-- Sidebar -->
-                    <div class="col-md-4" id="sidebar-col">
-                    	<div id="custom_category-1" class="widget sidebar-widget widget_custom_category"><h3 class="widgettitle">Sermon Categories</h3><ul><li><a href="sermon-category/baptism-take-the-next-step-in-your-journey/index.html">Baptism - Take the next step in your journey</a> (3)</li><li><a href="sermon-category/days-like-this/index.html">Days like this</a> (3)</li><li><a href="sermon-category/joy-generosity/index.html">Joy &amp; Generosity</a> (3)</li><li><a href="sermon-category/the-temple-of-the-holy-spirit/index.html">The temple of the holy spirit</a> (3)</li><li><a href="sermon-category/what-god-really-wants/index.html">What God Really Wants</a> (3)</li><li><a href="sermon-category/worship-gods-way/index.html">Worship God’s Way</a> (3)</li></ul></div><div id="tag_cloud-1" class="widget sidebar-widget widget_tag_cloud"><h3 class="widgettitle">Sermon Tags</h3><div class="tagcloud"><a href="indexb4dd.html?sermon-tag=anxiety" class="tag-cloud-link tag-link-46 tag-link-position-1" style="font-size: 8pt;" aria-label="Anxiety (1 item)">Anxiety</a>
-<a href="index8e12.html?sermon-tag=baptism" class="tag-cloud-link tag-link-38 tag-link-position-2" style="font-size: 8pt;" aria-label="Baptism (1 item)">Baptism</a>
-<a href="index51fb.html?sermon-tag=faith" class="tag-cloud-link tag-link-41 tag-link-position-3" style="font-size: 8pt;" aria-label="Faith (1 item)">Faith</a>
-<a href="index8899.html?sermon-tag=life" class="tag-cloud-link tag-link-47 tag-link-position-4" style="font-size: 8pt;" aria-label="Life (1 item)">Life</a>
-<a href="index6892.html?sermon-tag=love" class="tag-cloud-link tag-link-48 tag-link-position-5" style="font-size: 8pt;" aria-label="Love (1 item)">Love</a>
-<a href="index5be3.html?sermon-tag=storms" class="tag-cloud-link tag-link-49 tag-link-position-6" style="font-size: 8pt;" aria-label="Storms (1 item)">Storms</a></div>
-</div><div id="sermon_speakers-1" class="widget sidebar-widget widget_sermon_speakers"><h3 class="widgettitle">Sermon Speaker</h3><ul><li><a data-toggle="modal" data-target="#team-modal-2751" href="#"><img src="wp-content/uploads/sites/13/2015/01/staff4-100x100.jpg" class="attachment-100x100 size-100x100 wp-post-image" alt="" srcset="https://demo.imithemes.com/adore-church-wp/wp-content/uploads/sites/13/2015/01/staff4-100x100.jpg 100w, https://demo.imithemes.com/adore-church-wp/wp-content/uploads/sites/13/2015/01/staff4-150x150.jpg 150w, https://demo.imithemes.com/adore-church-wp/wp-content/uploads/sites/13/2015/01/staff4-210x210.jpg 210w, https://demo.imithemes.com/adore-church-wp/wp-content/uploads/sites/13/2015/01/staff4-180x180.jpg 180w, https://demo.imithemes.com/adore-church-wp/wp-content/uploads/sites/13/2015/01/staff4-300x300.jpg 300w" sizes="(max-width: 100px) 100vw, 100px" /></a><div class="people-info"><h5 class="people-name"><a data-toggle="modal" data-target="#team-modal-2751" href="#" class="">Kyleigh Lam</a></h5><span class="meta-data"> Events Manager </span></div></li><div class="modal fade team-modal" id="team-modal-2751" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="myModalLabel">Team Members</h4>
-                          </div>
-                            <div class="modal-body">
-                                <div class="staff-item">
-                                <div class="row">
-                                    <div class="col-md-5 col-sm-6">
-                                    	<img src="wp-content/uploads/sites/13/2015/01/staff4.jpg" class="img-thumbnail wp-post-image" alt="" srcset="https://demo.imithemes.com/adore-church-wp/wp-content/uploads/sites/13/2015/01/staff4.jpg 500w, https://demo.imithemes.com/adore-church-wp/wp-content/uploads/sites/13/2015/01/staff4-300x180.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" />
-                                    </div>
-                                    <div class="col-md-7 col-sm-6">
-                                    	<h3>Kyleigh Lam</h3>
-                                    	<span class="meta-data"> Events Manager </span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem.</p>
-</div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      </div>
-                    </div><li><a data-toggle="modal" data-target="#team-modal-2744" href="#"><img src="wp-content/uploads/sites/13/2015/01/staff3-100x100.jpg" class="attachment-100x100 size-100x100 wp-post-image" alt="" srcset="https://demo.imithemes.com/adore-church-wp/wp-content/uploads/sites/13/2015/01/staff3-100x100.jpg 100w, https://demo.imithemes.com/adore-church-wp/wp-content/uploads/sites/13/2015/01/staff3-150x150.jpg 150w, https://demo.imithemes.com/adore-church-wp/wp-content/uploads/sites/13/2015/01/staff3-210x210.jpg 210w, https://demo.imithemes.com/adore-church-wp/wp-content/uploads/sites/13/2015/01/staff3-180x180.jpg 180w, https://demo.imithemes.com/adore-church-wp/wp-content/uploads/sites/13/2015/01/staff3-300x300.jpg 300w" sizes="(max-width: 100px) 100vw, 100px" /></a><div class="people-info"><h5 class="people-name"><a data-toggle="modal" data-target="#team-modal-2744" href="#" class="">Elizabeth Hart</a></h5><span class="meta-data"> Events Manager </span></div></li><div class="modal fade team-modal" id="team-modal-2744" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="myModalLabel">Team Members</h4>
-                          </div>
-                            <div class="modal-body">
-                                <div class="staff-item">
-                                <div class="row">
-                                    <div class="col-md-5 col-sm-6">
-                                    	<img src="wp-content/uploads/sites/13/2015/01/staff3.jpg" class="img-thumbnail wp-post-image" alt="" srcset="https://demo.imithemes.com/adore-church-wp/wp-content/uploads/sites/13/2015/01/staff3.jpg 500w, https://demo.imithemes.com/adore-church-wp/wp-content/uploads/sites/13/2015/01/staff3-300x180.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" />
-                                    </div>
-                                    <div class="col-md-7 col-sm-6">
-                                    	<h3>Elizabeth Hart</h3>
-                                    	<span class="meta-data"> Events Manager </span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem.</p>
-</div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      </div>
-                    </div></ul></div>                    </div></div>
-                                    </div>
-         	</div>
-        </div>
+      </div>
    	</div>
+  </div>
+
+            <!-- Start Body Content-->
+
+  	<div class="main" role="main">
+    	<div id="content" class="content full">
+        	<div class="container">
+            
+  					<h1 style="color: #000; font-size: 40px; text-align: center;"><strong>From Our Blog</strong></h1>
+                  <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                          <div class="col-md-6">
+                           	<div class="very-latest-post format-standard">
+                              <div class="title-row"> 
+                                <h4>Featured</h4>
+                              </div>
+                              <img src="wp-content/uploads/sites/13/2015/01/afcmfreport.jpg" class="attachment-800x500 size-800x500 wp-post-image" alt="" />
+                              <h3 class="post-title"><a href="#">Agent Of Change</a></h3>
+                              <div class="meta-data">by <a href="#">Rey Richardson</a> on August 15, 2020 in <a href="#" >AFCMF Resources</a>, <a href="#" >Soul Food</a></div>
+                                <p>The way to winning souls is not to be just like the sinner, but to make the sinner want to be just like the Christian.</p>
+                                <p><a href="#" class="basic-link">Continue reading <i class="fa fa-angle-right"></i></a></p>
+                              </div>
+                            </div>
+
+                            <div class="col-md-6">
+                              <div class="very-latest-post format-standard">
+                                <div class="title-row">
+                                  <h4>Soul Food</h4>
+                                </div>
+                                <img src="wp-content/uploads/sites/13/2015/01/soulfood.png" class="attachment-800x500 size-800x500 wp-post-image" alt="" /> 
+                                <h3 class="post-title"><a href="#">Stand true to your convictions</a></h3>
+                                <div class="meta-data">by Loyce Carver on August 15, 2020 in <a href="#" >AFCMF Resources</a>, <a href="#" >Soul Food</a>
+                                </div>
+
+                                  <h3 class="post-title"><a href="#">Me? Live a Holy life?</a></h3>
+                                <div class="meta-data">by Dan Baker on August 15, 2020 in <a href="#" >AFCMF Resources</a>, <a href="#" >Soul Food</a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="very-latest-post format-standard">
+                       	<div class="title-row">
+                          <a href="#"></a>                                           
+                          <h4>Testimonies</h4>
+                        </div>
+                        <img src="wp-content/uploads/sites/13/2015/01/Testimonies.jpg" class="attachment-800x500 size-800x500 wp-post-image" alt="" />
+                        <h3 class="post-title"><a href="#">God Kept Me</a></h3>
+                        <div class="meta-data">by Mbetobong John on August 14, 2020 in <a href="#" >AFCMF Resources</a>, <a href="#" >My Service Experience</a>
+                        </div>
+
+                        <h3 class="post-title"><a href="#">My stay at the South</a></h3>
+                        <div class="meta-data">by Tunji Adejumo on August 15, 2020 in <a href="#" >AFCMF Resources</a>, <a href="#" >My Service Experience</a>
+                        </div>
+                    </div>
+				</div>
+            </div>
+        </div>
+    </div>
     <!-- End Body Content -->
+        <!-- Gallery updates -->
+    <div class="gallery-updates cols5 clearfix">
+    	<ul>
+
+
+<li>
+	<div class="grid-item-inner"> <a href="galleryvids.html"> <img src="wp-content/uploads/sites/13/2015/01/Campus Videos.jpg" class="attachment-400x400 size-400x400 wp-post-image" alt="" sizes="(max-width: 400px) 100vw, 400px" /> </a> </div>
+</li>
+
+<li class="format-link">
+	<div class="grid-item-inner"> <a href="soundcloudaudio.html"> <img src="wp-content/uploads/sites/13/2015/01/gallery_img1-400x400.jpg" class="attachment-400x400 size-400x400 wp-post-image" alt="" sizes="(max-width: 400px) 100vw, 400px" /> </a> </div>
+</li>
+
+<li class="format-link">
+	<div class="grid-item-inner"> <a href="picsgallery.html"> <img src="wp-content/uploads/sites/13/2015/01/Campus photos.jpg" class="attachment-400x400 size-400x400 wp-post-image" alt="" sizes="(max-width: 400px) 100vw, 400px" /> </a> </div>
+</li>
+
+<li class="format-link">	
+	<div class="grid-item-inner"> <a href="https://vimeo.com/user118214378"> <img src="wp-content/uploads/sites/13/2015/01/gallery_img5-400x400.jpg" class="attachment-400x400 size-400x400 wp-post-image" alt="" sizes="(max-width: 400px) 100vw, 400px" /> </a> </div>
+</li>
+
+<li class="format-link">
+	<div class="grid-item-inner"> <a href="#"> <img src="wp-content/uploads/sites/13/2015/01/Campus Reports.jpg" class="attachment-400x400 size-400x400 wp-post-image" alt="" sizes="(max-width: 400px) 100vw, 400px" /> </a> </div>
+</li>
+
+
+   	</ul>
+                <div class="gallery-updates-overlay">
+        	<div class="container">
+            	<i class="icon-multiple-image"></i>
+                <h2>Updates from our gallery</h2>
+            </div>
+        </div>
+            </div>
 <!-- Start site footer -->
 <footer class="site-footer">
        	<div class="container">
@@ -532,7 +677,7 @@ representatives for “Who wants to be a Bible Giant” are selected based on th
 		</div><div class="col-md-4 col-sm-4 widget footer-widget widget_twitter_feeds"><h4 class="widgettitle">Quick Links to Resources</h4><ul><li><a href="http://apostolicfaithweca.org/sunday-school-lessons" >Sunday School</a>: View lessons from our beloved Sunday School books</li><li><a href="http://apostolicfaith.org/daily-devotional" >Devotionals</a>: Enjoy Daily morsels for your Spiritual growth</li><li><a href="http://apostolicfaith.org/library/doctrinal" >Doctrinal Resources</a>: Strengthen the foundations of your Faith.</li><li><a href="http://apostolicfaith.org/library/online-magazine/volumes?volumeid=17472906" >AFM Magazines</a>: Edify your spirit with soul lifting articles</li></ul></div><div class="col-md-4 col-sm-4 widget footer-widget widget_newsletter"><h4 class="widgettitle">Prayer Requests</h4><form method ="post" action ="#">
               <textarea rows="4" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" placeholder="Enter your Prayer request for the people of God to intercede on your behalf" style="resize:none"></textarea>
                     <input type="email" name="newsletter_email" id="email-nl" placeholder="Enter your email" class="form-control">
-                  <input type="submit" name="newsletter_submit" class="btn btn-primary btn-block btn-lg" value="Submit">
+                  <input type="submit" name="newsletter_submit" class="btn btn-outline-primary btn-block btn-lg" value="Submit">
                </form></div>            		</div>
            	        		<!-- Quick Info -->
         		<div class="quick-info">
@@ -911,72 +1056,35 @@ var ajax = {"url":"https:\/\/demo.imithemes.com\/adore-church-wp\/wp-admin\/admi
 </script>
  <script src="wp-content/themes/AdoreChurch-Child/style-switcher/js/jquery_cookie.js"></script> 
 <script src="wp-content/themes/AdoreChurch-Child/style-switcher/js/script.js"></script> 
-<!-- Style Switcher Start -->
-<!-- <div class="styleswitcher visible-lg visible-md">
-  <div class="arrow-box"><a class="switch-button"><span class="fa fa-cogs fa-lg"></span></a> </div>
-  <h4>Color Skins</h4>
-  <ul class="color-scheme">
-    <li><a href="#" data-rel="https://demo.imithemes.com/adore-church-wp/wp-content/themes/AdoreChurch-Child/colors/color1.css" class="color1" title="color1"></a></li>
-    <li><a href="#" data-rel="https://demo.imithemes.com/adore-church-wp/wp-content/themes/AdoreChurch-Child/colors/color2.css" class="color2" title="color2"></a></li>
-    <li><a href="#" data-rel="https://demo.imithemes.com/adore-church-wp/wp-content/themes/AdoreChurch-Child/colors/color3.css" class="color3" title="color3"></a></li>
-    <li><a href="#" data-rel="https://demo.imithemes.com/adore-church-wp/wp-content/themes/AdoreChurch-Child/colors/color4.css" class="color4" title="color4"></a></li>
-    <li><a href="#" data-rel="https://demo.imithemes.com/adore-church-wp/wp-content/themes/AdoreChurch-Child/colors/color5.css" class="color5" title="color5"></a></li>
-    <li><a href="#" data-rel="https://demo.imithemes.com/adore-church-wp/wp-content/themes/AdoreChurch-Child/colors/color6.css" class="color6" title="color6"></a></li>
-    <li><a href="#" data-rel="https://demo.imithemes.com/adore-church-wp/wp-content/themes/AdoreChurch-Child/colors/color7.css" class="color7" title="color7"></a></li>
-    <li><a href="#" data-rel="https://demo.imithemes.com/adore-church-wp/wp-content/themes/AdoreChurch-Child/colors/color8.css" class="color8" title="color8"></a></li>
-    <li class="nomargin"><a href="#" data-rel="https://demo.imithemes.com/adore-church-wp/wp-content/themes/AdoreChurch-Child/colors/color9.css" class="color9" title="color9"></a></li>
-    <li class="nomargin"><a href="#" data-rel="https://demo.imithemes.com/adore-church-wp/wp-content/themes/AdoreChurch-Child/colors/color10.css" class="color10" title="color10"></a></li>
-    <li class="nomargin"><a href="#" data-rel="https://demo.imithemes.com/adore-church-wp/wp-content/themes/AdoreChurch-Child/colors/color11.css" class="color11" title="color11"></a></li>
-    <li class="nomargin"><a href="#" data-rel="https://demo.imithemes.com/adore-church-wp/wp-content/themes/AdoreChurch-Child/colors/color12.css" class="color12" title="color12"></a></li>
-  </ul>
-  <h4>Layout</h4>
-  <ul class="layouts">
-    <li class="wide-layout"><a href="#" title="Wide">Wide</a></li>
-    <li class="boxed-layout"><a href="#" title="Boxed">Boxed</a></li>
-  </ul>
-  <h4>Background Pattern</h4>
-  <ul class="background-selector">
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt1.png" data-nr="0" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt2.png" data-nr="1" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt3.png" data-nr="2" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt4.png" data-nr="3" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt5.png" data-nr="4" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt6.png" data-nr="5" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt7.png" data-nr="6" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt8.png" data-nr="7" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt9.png" data-nr="8" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt10.png" data-nr="9" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt11.png" data-nr="10" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt12.png" data-nr="11" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt13.png" data-nr="12" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt14.png" data-nr="13" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt15.png" data-nr="14" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt16.png" data-nr="15" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt17.png" data-nr="16" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt18.png" data-nr="17" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt19.png" data-nr="18" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt20.png" data-nr="19" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt21.png" data-nr="20" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt22.png" data-nr="21" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt23.png" data-nr="22" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt24.png" data-nr="23" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt25.png" data-nr="24" width="20" height="20"></li>
-    <li class="nomargin"><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt26.png" data-nr="25" width="20" height="20"></li>
-    <li class="nomargin"><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt27.png" data-nr="26" width="20" height="20"></li>
-    <li class="nomargin"><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt28.png" data-nr="27" width="20" height="20"></li>
-    <li class="nomargin"><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt29.png" data-nr="28" width="20" height="20"></li>
-    <li class="nomargin"><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/patternst/ptt30.png" data-nr="29" width="20" height="20"></li>
-  </ul>
-  <small>*only for boxed layout</small>
-  <h4>Background Image</h4>
-  <ul class="background-selector1">
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/images/img1-thumb.png" data-nr="0" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/images/img2-thumb.png" data-nr="1" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/images/img3-thumb.png" data-nr="2" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/images/img4-thumb.png" data-nr="3" width="20" height="20"></li>
-    <li><img alt="" src="wp-content/themes/AdoreChurch-Child/style-switcher/backgrounds/images/img5-thumb.png" data-nr="4" width="20" height="20"></li>
-  </ul> -->
-  <small>*only for boxed layout</small> </div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </body>
 
 	<script src="js/jquery.min.js"></script>
