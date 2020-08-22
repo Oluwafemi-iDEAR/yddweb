@@ -63,7 +63,7 @@ figure:hover figcaption {
 
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
-
+/*
 hr.sep-2 {
   border: 0; 
   height: 1px; 
@@ -120,11 +120,11 @@ hr.teend:after {
   line-height: 1;
   content: ". . . . . . .";
 }
-
+*/
 
 /*----------------------Audio player----------------*/
 
-.example {
+/*.example {
     margin: 50px auto 0;
     width: 400px;
 }
@@ -272,6 +272,6 @@ hr.teend:after {
 }
 .playlist li.active {
     font-weight: bold;
-}
+}*/
 
 /*--------------------Audio player ends-------------*/

@@ -1,0 +1,358 @@
+@import url(https://fonts.googleapis.com/css?family=Londrina+Shadow);
+@import url(https://fonts.googleapis.com/css?family=Enriqueta);
+/*header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .contain {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlays {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 1;
+}
+*/
+ .container {
+    position: relative;
+    z-index: 1; }
+
+
+/*--------------Platforms------------------------*/
+.platforms-grid {
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    background-color: #292924;
+}
+
+/*--------------------------------------*/
+
+.platforms-grid li {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+/*--------------------------------------*/
+.platforms-grid li:nth-child(2n) a {
+    background-color: #2f305e
+}
+
+.platforms-grid li:nth-child(2n) svg {
+    top: -50px;
+    bottom: auto
+}
+
+.platforms-grid li:nth-child(2n) svg path {
+    fill: #0184b0
+}
+
+.platforms-grid li a {
+    position: relative;
+    display: block;
+    padding: 1em 1.5em;
+    overflow: hidden;
+    font-family: avenirnext-bold, sans-serif;
+    font-size: 1.3em;
+    line-height: 1.1em;
+    color: rgba(255, 255, 255, .4);
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #0184b0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s
+}
+
+.platforms-grid li svg {
+    position: absolute;
+    right: 15px;
+    bottom: -50px;
+    z-index: 2;
+    width: 78.78358150161506px;
+    height: 100px
+}
+
+.platforms-grid li svg path {
+    fill: #2f305e
+  }
+
+@media only screen and (min-width:1000px) {
+    .platforms-grid li {
+        width: 33.33%
+    }
+    .platforms-grid li a {
+        padding: 2em 3em
+    }
+    .platforms-grid li a:hover {
+        color: #fff;
+        background-color: transparent
+    }
+    .platforms-grid li a:hover svg path {
+        fill: #fff
+    }
+    .platforms-grid li a:hover:after {
+        width: 100%
+    }
+    .platforms-grid li a:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 0;
+        height: 100%;
+        /*background-color: #574ea9, .60;*//*
+        background-color: rgba(154, 46, 54, .75);*/
+        content: "";
+        -webkit-transition: width .3s;
+        -moz-transition: width .3s;
+        -ms-transition: width .3s;
+        -o-transition: width .3s;
+        transition: width .3s
+    }
+    .platforms-grid li a .title {
+        position: relative;
+        z-index: 3
+    }
+    .platforms-grid li svg {
+        position: absolute;
+        bottom: -100px;
+        z-index: 2;
+        width: 157.56716300323012px;
+        height: 200px
+    }
+    .platforms-grid li svg path {
+        fill: #2f305e/*#75d4f2*//*#066282*//*#292929*/
+    }
+    .platforms-grid li:nth-child(2n) svg {
+        top: -100px
+    }
+}
+/*-----------------------------------AFMWECA YDD------------------------------------------*/
+.title-area{
+  vertical-align:middle;
+  display:inline-block;
+  text-align:left;
+    padding-left: 40px;
+    font: 400 100px/2.0 'Great Vibes', Helvetica, sans-serif;
+  color: #000;
+  font-size:35px;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2); 
+}
+.title-area h1{
+  color:#fff;/*
+  font-family:"Montserrat", Arial, Helvetica, sans-serif;*/
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size:25px;
+  font-weight:500;
+  letter-spacing:5px;
+  text-transform:uppercase;
+  margin:0;
+  padding-left: 1px;
+}
+
+.title-area span{
+  font-size:15px;
+  color:#fff;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  font-weight:300;
+}
+
+.fx .item .overlay{
+  position:absolute;
+  bottom:0;
+  background:rgba(255,255,255,.9);
+  padding:20px 30px 20px 30px;
+  width:100%;
+}
+
+.item .overlay{
+  background:#fff;
+  display:block;
+  position:absolute;
+}
+
+.item .overlay .desc{
+  display:block;
+  height:0px;
+  overflow:hidden;
+}
+
+.item .overlay h3{
+    font-size:18px;
+  margin:0;
+  padding:0;
+}
+/* columns */
+.fullwidth{
+  display:table;
+  width:100%;
+  table-layout: fixed;
+  border-collapse:collapse;
+  padding:0 !important;
+  margin:0 !important;
+  overflow:hidden;
+}
+
+.one-fourth{
+  width:24.9%;
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.one-third{
+  width:33.3%;
+  float:left;
+}
+
+.three-fourth{
+  width:74.9%;
+  height:100%;
+  display:table-cell;
+}
+/* carousel */
+.custom-carousel-1{
+  padding:0 !important;
+  margin:0 !important;
+  background:#222;
+}
+
+#page-events, #page-blog{
+  background:#323465;
+}
+
+.custom-carousel-1,
+.custom-carousel-2,
+#testi-carousel{
+cursor: move;
+cursor: -webkit-grab; 
+cursor: -moz-grab;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media (max-width: 992px) {
+#slider .slider-info{display:none;}
+.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{ margin-bottom:30px;}
+.one-fourth, .three-fourth{
+  width:100%;
+  display:block;
+  float:none;
+}
+
+
+
+/*----------------------------------------------------Gallery Column Starts--------------------------------------------------------*/
+
+/*#section2{
+  display:block;
+  margin-top:15px;
+  float:left;
+  background:#fff;
+  border-radius:10px;
+  border:6px solid #3bafda;
+  padding:15px;
+  margin-left:15px;
+}
+
+.gallery{
+  margin: 10px 50px;
+}
+.gallery img{
+  width: 150px;
+  padding: 5px;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+.gallery img:hover{
+  filter: grayscale(0);
+  transform: scale(1.1);
+}*/
+/*----------------------------------------------------Gallery Column Ends--------------------------------------------------------*/
+
+/*----------------------------------------------------Change Background Pic on scroll--------------------------------------------------------*/
+/*
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {*/
+  /* Full height *//*
+  height: 50%;*/
+
+  /* Center and scale the image nicely *//*
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
+/* Images used *//*
+.img1 { background-image: url("wp-content/uploads/sites/13/2015/01/slide8.png"); }
+.img2 { background-image: url("wp-content/uploads/sites/13/2015/01/slide8.png"); }
+.img3 { background-image: url("wp-content/uploads/sites/13/2015/01/slide8.png"); }
+.img4 { background-image: url("wp-content/uploads/sites/13/2015/01/slide8.png"); }
+.img5 { background-image: url("wp-content/uploads/sites/13/2015/01/slide8.png"); }
+.img6 { background-image: url("wp-content/uploads/sites/13/2015/01/slide8.png"); }
+*/
+/* Position text in the middle of the page/image *//*
+.bg-text {
+  background-color: rgb(0,0,0);*/ /* Fallback color *//*
+  background-color: rgba(0,0,0, 0.4);*/ /* Black w/opacity/see-through *//*
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed;*/ /* Stay fixed *//*
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;*/
+}
+/*----------------------------------------------------Change Background Pic on scroll Ends--------------------------------------------------------*/
