@@ -44,6 +44,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 body {
 	line-height: 1;
+	background:#f8f8f8 !important;
 }
 ol, ul {
 	list-style: none;
@@ -2095,16 +2096,16 @@ body.boxed .body{
 .featured-block figure img{
 	position: relative;
 	display: block;
-	opacity: .5;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+	opacity: transparent;
 }
 .featured-block:hover figure img{
-	opacity:1;
+	opacity:.5;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: translate3d(0,0,0) scale(1);
+	-webkit-backface-visibility: hidden;
 	transform: translate3d(0,0,0) scale(1);
+	backface-visibility: hidden;
 }
 .featured-block p{
 	padding:0 20px 0 0;
